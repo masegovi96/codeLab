@@ -1,0 +1,35 @@
+Lenguaje a utilizar: PHP
+
+Estructura propuesta para el proyecto:
+
+| Estructura de carpetas
+|-- codelab
+|   |-- css
+|   |-- js
+|   |-- php
+|   |   |-- conexion.php
+|   |   |-- funciones.php
+|   |   |-- registro.php
+|   |-- img
+|   |-- index.html
+|   |-- calendario.html
+|   |-- registro.html
+
+Grupo PHP:
+Maximiliano Pérez
+Christopher Meza
+Angel Catzin
+Jose Ramirez
+Alan Trinidad
+Gerardo Díaz
+Pablo Salomón
+
+Responsabilidades
+
+Maximiliano: Gestión, desarrollo y reparación de los procesos del sistema.
+Christopher: Todo el sistema
+Angel: Todo el sistema
+Jose: Todo el sistema
+Alan: Todo el sistema
+Gerardo: Desarrollo y vigilar a Pablo
+Pablo: Desarrollo
