@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    
+}
+
+body{
+    padding: 2.2rem 2rem;
+}
+
+/*Títulos*/
+main h2{
+    font-weight: 900;
+}
+
+main h3{
+    font-weight: 400;
+    color: #424242;
+}
+
+/*Main*/
+main{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/*Imagen*/
+main img{
+    width: 48%;
+    height: 90dvh;
+}
+
+/*Registro*/
+.campos-registro{
+    border: 1px solid red;/*Para guiarme*/
+    width: 50%;
+    height: 90dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registro-div{
+    height: 100%;
+    border: 1px solid red;/*Para guiarme*/
+}

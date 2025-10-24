@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/logo-paginas.png" />
+    <link rel="stylesheet" href="assets/css/registro.css" />
+    <script
+      src="https://kit.fontawesome.com/e522357059.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Registro de Usuario</title>
+  </head>
+  <body>
+    <!--Principal-->
+    <main>
+      <img src="assets/img/codelab-registro-login.png" alt="CodeLab" />
+      <div class="campos-registro">
+        <div class="registro-div">
+          <div class="titulos">
+            <h2>BIENVENIDO A CODELAB</h2>
+            <h3>REGÍSTRATE</h3>
+          </div>
+          <form action="">
+            <div class="matricula">
+              <input
+                type="text"
+                name="matricula"
+                placeholder="Matricula estudiantil"
+                required
+              />
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="nombre">
+              <input type="text" name="nombre" placeholder="Nombre" required />
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="apellidos">
+              <input type="text" name="apellidos" placeholder="Apellidos" required/>
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <div class="email">
+              <input
+                type="email"
+                name="email-institucional"
+                placeholder="Correo institucional"
+                required
+              />
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="cuatrimestre">
+              <!--Este campo está pendiente en aprobación-->
+              <label for="">Cuatrimestre</label>
+              <select name="opciones-cuatrimestre" title="select" required>
+                <option value="">Primero</option>
+                <option value="">Segundo</option>
+                <option value="">Tercero</option>
+                <option value="">Cuarto</option>
+                <option value="">Quinto</option>
+                <option value="">Sexto</option>
+                <option value="">Séptimo</option>
+                <option value="">Octavo</option>
+                <option value="">Noveno</option>
+              </select>
+            </div>
+            <div class="contrasena">
+              <i class="fa-solid fa-pen"></i>
+              <input
+                type="password"
+                name="contraseña"
+                placeholder="Contraseña"
+                required
+              />
+            </div>
+            <div class="rol">
+              <label for="">Selecciona tu rol</label>
+              <select title="opciones-rol" class="opciones-rol" required>
+                <option value="">Miembro</option>
+                <option value="">Administrador</option>
+              </select>
+            </div>
+            <div class="boton-registrar">
+              <button type="submit" name="registrar">Registrarse</button>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/registro.js"></script>
+  </body>
+</html>
