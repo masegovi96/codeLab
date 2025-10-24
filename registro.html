@@ -22,7 +22,7 @@
             <h3>REGÍSTRATE</h3>
           </div>
           <form action="">
-            <div class="matricula">
+            <div class="matricula campos">
               <input
                 type="text"
                 name="matricula"
@@ -31,15 +31,20 @@
               />
               <i class="fa-solid fa-school"></i>
             </div>
-            <div class="nombre">
+            <div class="nombre campos">
               <input type="text" name="nombre" placeholder="Nombre" required />
               <i class="fa-solid fa-user"></i>
             </div>
-            <div class="apellidos">
-              <input type="text" name="apellidos" placeholder="Apellidos" required/>
+            <div class="apellidos campos">
+              <input
+                type="text"
+                name="apellidos"
+                placeholder="Apellidos"
+                required
+              />
               <i class="fa-solid fa-user-tie"></i>
             </div>
-            <div class="email">
+            <div class="email campos">
               <input
                 type="email"
                 name="email-institucional"
@@ -48,7 +53,7 @@
               />
               <i class="fa-solid fa-envelope"></i>
             </div>
-            <div class="cuatrimestre">
+            <div class="cuatrimestre campos-select">
               <!--Este campo está pendiente en aprobación-->
               <label for="">Cuatrimestre</label>
               <select name="opciones-cuatrimestre" title="select" required>
@@ -63,8 +68,8 @@
                 <option value="">Noveno</option>
               </select>
             </div>
-            <div class="contrasena">
-              <i class="fa-solid fa-pen"></i>
+            <div class="contrasena campos">
+              <i class="fa-solid fa-lock"></i>
               <input
                 type="password"
                 name="contraseña"
@@ -72,17 +77,16 @@
                 required
               />
             </div>
-            <div class="rol">
+            <div class="rol campos-select">
               <label for="">Selecciona tu rol</label>
               <select title="opciones-rol" class="opciones-rol" required>
                 <option value="">Miembro</option>
                 <option value="">Administrador</option>
               </select>
             </div>
-            <div class="boton-registrar">
-              <button type="submit" name="registrar">Registrarse</button>
-              <i class="fa-solid fa-arrow-right"></i>
-            </div>
+            <button type="submit" name="registrar">
+              Registrarse<i class="fa-solid fa-arrow-right"></i>
+            </button>
           </form>
         </div>
       </div>
