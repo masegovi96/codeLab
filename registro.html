@@ -18,10 +18,10 @@
       <div class="campos-registro">
         <div class="registro-div">
           <div class="titulos">
-            <h2>BIENVENIDO A CODELAB</h2>
-            <h3>REGÍSTRATE</h3>
+            <h1>¡REGÍSTRATE A CODELAB!</h1>
+            <h2>A unos pasos de ser parte del club</h2>
           </div>
-          <form action="">
+          <form action="" id="formulario-registro">
             <div class="matricula campos">
               <input
                 type="text"
@@ -55,8 +55,8 @@
             </div>
             <div class="cuatrimestre campos-select">
               <!--Este campo está pendiente en aprobación-->
-              <label for="">Cuatrimestre</label>
-              <select name="opciones-cuatrimestre" title="select" required>
+              <label for="">Cuatrimestre:</label>
+              <select name="opciones-cuatrimestre" class="opciones-cuatrimestre" title="select" required>
                 <option value="">Primero</option>
                 <option value="">Segundo</option>
                 <option value="">Tercero</option>
@@ -76,16 +76,18 @@
                 placeholder="Contraseña"
                 required
               />
+              <i class="fa-regular fa-eye-slash"></i>
+              <p id="mensaje-validacion" class="mensaje-validacion"></p>
             </div>
             <div class="rol campos-select">
-              <label for="">Selecciona tu rol</label>
+              <label for="">Selecciona tu rol:</label>
               <select title="opciones-rol" class="opciones-rol" required>
                 <option value="">Miembro</option>
                 <option value="">Administrador</option>
               </select>
             </div>
             <button type="submit" name="registrar">
-              Registrarse<i class="fa-solid fa-arrow-right"></i>
+              Registrarse
             </button>
           </form>
         </div>

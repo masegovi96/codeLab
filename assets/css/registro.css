@@ -7,22 +7,19 @@
   font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
 
-body {
-  padding: 2.2rem 2rem;
-}
-
 /*Títulos*/
 main .titulos {
   text-align: center;
-  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+main h1 {
+  font-size: 28px;
 }
 
 main h2 {
-  font-weight: 900;
-}
-
-main h3 {
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 20.5px;
   color: #424242;
 }
 
@@ -30,19 +27,18 @@ main h3 {
 main {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
 }
 
 /*Imagen*/
 main img {
-  width: 48%;
-  height: 90dvh;
+  width:50%;
+  height: 100dvh;
 }
 
 /*Registro*/
 .campos-registro {
   width: 50%;
-  height: 90dvh;
+  height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,7 +48,8 @@ main img {
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap:1rem;
+  justify-content: center;
+
 }
 
 .registro-div form {
@@ -82,23 +79,33 @@ form .campos input, form select {
 }
 
 form select{
-      height: 40px;
+    height: 40px;
   background-color: #eef3f7;
   border: 1px solid #cfdce7;
-  width: 50%;
   font-size: 15px;
   padding: 0 2.2rem;
-  color: #2a3d66;
+  color: #666;
   border-radius: 9px;
 }
 
 form .campos-select{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 1rem;
+    justify-content: space-between;
+    gap: 10px;
 }
 
+.campos-select label{
+  color: #000;
+}
+
+form .opciones-cuatrimestre{
+  width: 60%;
+}
+
+form .opciones-rol{
+  width: 60%;
+}
 
 .campos i {
   position: absolute;
@@ -109,11 +116,21 @@ form .campos-select{
   font-size: 15px;
 }
 
+.campos .fa-eye-slash {
+  left: auto;       
+  right: 12px;       
+  cursor: pointer;   
+}
+
+
 button {
   background-color: #24243e;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 15px;
   padding: 1rem;
   margin-top: 2rem;
   cursor: pointer;
@@ -124,4 +141,10 @@ button {
 button i {
   color: #fff;
   font-size: 14px;
+}
+
+/*Mensaje de validación para la contraseña*/
+.mensaje-validacion{
+   text-align: left;
+  font-size: 12px;
 }
