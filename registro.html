@@ -14,7 +14,9 @@
   <body>
     <!--Principal-->
     <main>
-      <img src="assets/img/codelab-registro-login.png" alt="CodeLab" />
+      <div class="img">
+        <img src="assets/img/logo-registro-login.png" alt="CodeLab" />
+      </div>
       <div class="campos-registro">
         <div class="registro-div">
           <div class="titulos">
@@ -56,7 +58,12 @@
             <div class="cuatrimestre campos-select">
               <!--Este campo está pendiente en aprobación-->
               <label for="">Cuatrimestre:</label>
-              <select name="opciones-cuatrimestre" class="opciones-cuatrimestre" title="select" required>
+              <select
+                name="opciones-cuatrimestre"
+                class="opciones-cuatrimestre"
+                title="select"
+                required
+              >
                 <option value="">Primero</option>
                 <option value="">Segundo</option>
                 <option value="">Tercero</option>
@@ -86,9 +93,7 @@
                 <option value="">Administrador</option>
               </select>
             </div>
-            <button type="submit" name="registrar">
-              Registrarse
-            </button>
+            <button type="submit" name="registrar">Registrarse</button>
           </form>
         </div>
       </div>
