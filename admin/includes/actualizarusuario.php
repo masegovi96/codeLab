@@ -35,3 +35,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     header("Location: ../../index.html");
 }
+
+mysqli_close($conn);
+?>

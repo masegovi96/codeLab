@@ -1,16 +1,16 @@
 <?php
 include "conexion.php";
-// Registro de miembros desde el panel administrativo
+// Registro de miembros
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obtener datos del formulario
     $matricula = isset($_POST['matricula']);
     $nombre = isset($_POST['nombre']);
     $apellidos = isset($_POST['apellidos']);
     $correo = isset($_POST['correo']);
-    // $cuatrimestre = isset($_POST['cuatrimestre']);
+    $cuatrimestre = isset($_POST['cuatrimestre']);
     $password = isset($_POST['password']);
-    $rol = isset($_POST['rol']);
-    // $sugerencia = isset($_POST['sugerencia']);
+    $sugerencia = isset($_POST['sugerencia']);
+    $rol = "miembro";
 
 
     // Preparar la consulta
@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 } else {
-    header("Location: ../../index.html");
+    header("Location: index.html");
 }
 
 mysqli_close($conn);
