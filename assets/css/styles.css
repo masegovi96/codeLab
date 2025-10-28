@@ -194,6 +194,118 @@ img {
 }
 
 /* ================================
+   SECCIÓN: CONOCE SOBRE CODELAB
+================================ */
+
+.seccion-conoce {
+    background-color: #F7F7F8;
+    padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    color: var(--color-dark);
+    margin-bottom: var(--spacing-xl);
+}
+
+.contenedor-conoce {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: center;
+}
+
+/* Tarjeta de texto */
+.tarjeta-texto {
+    background-color: #1E242C;
+    color: var(--color-white);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+.etiqueta-tarjeta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+}
+
+.texto-principal {
+    font-size: var(--font-size-lg);
+    line-height: 1.8;
+    color: var(--color-white);
+    max-width: 450px;
+}
+
+/* Botones de navegación */
+.botones-navegacion {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+}
+
+.btn-nav {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-md);
+}
+
+.btn-nav-prev {
+    background-color: #E5E7EB;
+    color: var(--color-dark);
+}
+
+.btn-nav-prev:hover {
+    background-color: #D1D5DB;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-nav-next {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-nav-next:hover {
+    background-color: #0284C7;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Imagen */
+.imagen-persona {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-persona img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-lg);
+    object-fit: cover;
+}
+
+/* ================================
    FOOTER
 ================================ */
 
@@ -305,6 +417,11 @@ img {
         gap: var(--spacing-sm);
     }
     
+    .contenedor-conoce {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
     .contenedor-footer {
         grid-template-columns: 1fr;
         gap: var(--spacing-md);
@@ -312,6 +429,10 @@ img {
 }
 
 @media (max-width: 992px) {
+    .contenedor-conoce {
+        grid-template-columns: 1fr;
+    }
+    
     .contenedor-footer {
         grid-template-columns: repeat(2, 1fr);
     }
