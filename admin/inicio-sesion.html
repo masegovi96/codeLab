@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inicio de sesión - CODELAB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/inicio.css" />
+  </head>
+  <body>
+    <div class="page-bg">
+      <div class="container">
+        <div class="card">
+          <div class="left">
+            <div class="image-wrap">
+              <img src="assets/img/ensamblador_2.png" alt="Logo CODELAB">
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="form-wrap">
+              <h2>¡INICIA SESIÓN EN CODELAB!</h2>
+              <p class="muted">A unos pasos de ser parte del club</p>
+
+              <form class="login-form" action="#" method="post" id="loginForm">
+                <label class="input-group">
+                  <span class="icon">✉</span>
+                  <input type="email" name="correo" id="correo" placeholder="Correo institucional" required>
+                </label>
+
+                <label class="input-group" id="passwordGroup">
+                  <span class="icon">🔒</span>
+                  <input type="password" name="contrasena" id="contrasena" placeholder="Contraseña" minlength="8" required>
+                </label>
+                <p class="password-error" id="passwordError"></p>
+
+                <button class="btn-primary" type="submit">INICIAR SESIÓN</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <script src="assets/js/inicio.js"></script>
+  </body>
+</html>
