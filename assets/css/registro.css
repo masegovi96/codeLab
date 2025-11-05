@@ -155,8 +155,10 @@ button i {
 
 /*Mensaje de validación para la contraseña*/
 .mensaje-validacion{
-   text-align: left;
+  text-align: left;
   font-size: 12px;
+  width:330px;
+  margin-top: -1rem;
 }
 
 /*Quitar flechas del input type="number"*/
