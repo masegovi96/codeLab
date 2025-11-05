@@ -125,7 +125,8 @@ form .opciones-rol{
   font-size: 15px;
 }
 
-.campos .fa-eye-slash {
+.campos .fa-eye-slash ,.campos .fa-eye {
+  top: 50%;
   left: auto;       
   right: 12px;       
   cursor: pointer;   
