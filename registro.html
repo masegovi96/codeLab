@@ -26,7 +26,7 @@
           <form action="" id="formulario-registro">
             <div class="matricula campos">
               <input
-                type="text"
+                type="number"
                 name="matricula"
                 placeholder="Matricula estudiantil"
                 required
@@ -34,13 +34,14 @@
               <i class="fa-solid fa-school"></i>
             </div>
             <div class="nombre campos">
-              <input type="text" name="nombre" placeholder="Nombre" required />
+              <input type="text" name="nombre" placeholder="Nombre" required id="nombre"/>
               <i class="fa-solid fa-user"></i>
             </div>
             <div class="apellidos campos">
               <input
                 type="text"
                 name="apellidos"
+                id="apellidos"
                 placeholder="Apellidos"
                 required
               />
@@ -64,6 +65,7 @@
                 title="select"
                 required
               >
+              <option value="">Selecciona</option>
                 <option value="">Primero</option>
                 <option value="">Segundo</option>
                 <option value="">Tercero</option>
@@ -87,8 +89,10 @@
               <p id="mensaje-validacion" class="mensaje-validacion"></p>
             </div>
             <div class="rol campos-select">
-              <label for="">Selecciona tu rol:</label>
+              <label for="">Rol/Cargo</label>
               <select title="opciones-rol" class="opciones-rol" required>
+              <option value="">Selecciona</option>
+
                 <option value="">Miembro</option>
                 <option value="">Administrador</option>
               </select>

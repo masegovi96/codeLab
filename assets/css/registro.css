@@ -41,7 +41,6 @@ main {
 main img {
   width:100%;
   height: 100%;
-  background-color: #fff;
   border-radius: 6px;
 }
 
@@ -126,7 +125,8 @@ form .opciones-rol{
   font-size: 15px;
 }
 
-.campos .fa-eye-slash {
+.campos .fa-eye-slash ,.campos .fa-eye {
+  top: 50%;
   left: auto;       
   right: 12px;       
   cursor: pointer;   
@@ -157,4 +157,11 @@ button i {
 .mensaje-validacion{
    text-align: left;
   font-size: 12px;
+}
+
+/*Quitar flechas del input type="number"*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
