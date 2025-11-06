@@ -67,6 +67,13 @@ registro.addEventListener("submit", (e)=>{
         return false;
     }
 
+    // Validar que se haya seleccionado un cuatrimestre
+    const cuatrimestre = document.querySelector('.opciones-cuatrimestre').value;
+    if (cuatrimestre === "") {
+        alert("Por favor, selecciona un cuatrimestre.");
+        return false;
+    }
+
     // Si la validación es correcta, continuar con el envío
     console.log("Validación exitosa");
     registro.submit();
