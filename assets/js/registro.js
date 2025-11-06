@@ -69,4 +69,5 @@ registro.addEventListener("submit", (e)=>{
 
     // Si la validación es correcta, continuar con el envío
     console.log("Validación exitosa");
+    registro.submit();
 })

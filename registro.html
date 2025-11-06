@@ -23,11 +23,12 @@
             <h1>¡REGÍSTRATE A CODELAB!</h1>
             <h2>A unos pasos de ser parte del club</h2>
           </div>
-          <form action="" id="formulario-registro">
+          <form action="includes/registromiembro.php" method="POST" id="formulario-registro">
             <div class="matricula campos">
               <input
                 type="number"
                 name="matricula"
+                id="matricula"
                 placeholder="Matricula estudiantil"
                 required
               />
@@ -66,15 +67,15 @@
                 required
               >
               <option value="">Selecciona</option>
-                <option value="">Primero</option>
-                <option value="">Segundo</option>
-                <option value="">Tercero</option>
-                <option value="">Cuarto</option>
-                <option value="">Quinto</option>
-                <option value="">Sexto</option>
-                <option value="">Séptimo</option>
-                <option value="">Octavo</option>
-                <option value="">Noveno</option>
+                <option value="1">Primero</option>
+                <option value="2">Segundo</option>
+                <option value="3">Tercero</option>
+                <option value="4">Cuarto</option>
+                <option value="5">Quinto</option>
+                <option value="6">Sexto</option>
+                <option value="7">Séptimo</option>
+                <option value="8">Octavo</option>
+                <option value="9">Noveno</option>
               </select>
             </div>
             <div class="contrasena campos">
@@ -90,11 +91,10 @@
             </div>
             <div class="rol campos-select">
               <label for="">Rol/Cargo</label>
-              <select title="opciones-rol" class="opciones-rol" required>
+              <select name="opciones-rol" title="opciones-rol" class="opciones-rol" required>
               <option value="">Selecciona</option>
-
-                <option value="">Miembro</option>
-                <option value="">Administrador</option>
+                <option value="miembro">Miembro</option>
+                <option value="administrador">Administrador</option>
               </select>
             </div>
             <button type="submit" name="registrar">Registrarse</button>
