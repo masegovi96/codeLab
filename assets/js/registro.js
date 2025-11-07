@@ -19,13 +19,13 @@ iconoOjo.addEventListener("click", () => {
 // Validar contraseña en tiempo real
 inputContrasena.addEventListener("input", () => {
     const contrasena = inputContrasena.value;
-    const regexContrasena = /^(?=.*[a-zA-Z])(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{10,}$/;
+    const regexContrasena = /^(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?])(?=.*[A-Za-z]).{8,}$/;
     
     if (contrasena === "") {
         mensajeValidacion.textContent = "";
         mensajeValidacion.style.color = "";
     } else if (!regexContrasena.test(contrasena)) {
-        mensajeValidacion.textContent = "La contraseña debe tener al menos 10 caracteres, incluir letras y al menos un carácter especial";
+        mensajeValidacion.textContent = "La contraseña debe tener al menos 8 caracteres, incluir letras y al menos un carácter especial";
         mensajeValidacion.style.color = "red";
     } else {
         mensajeValidacion.textContent = "Contraseña válida";
@@ -42,11 +42,11 @@ registro.addEventListener("submit", (e)=>{
     const nombre = document.getElementById("nombre").value.trim();
     const apellido = document.getElementById("apellidos").value.trim();
     if (!regexNombre.test(nombre)) {
-        alert("Nombre inválido. Solo se permiten letras (máximo 5 palabras), sin números ni caracteres especiales.");
+        alert("Nombre inválido. Solo se permiten letras, sin números ni caracteres especiales.");
         return false;
     }
     if (!regexApellido.test(apellido)) {
-        alert("Apellido inválido. Solo se permiten letras (máximo 5 palabras), sin números ni caracteres especiales.");
+        alert("Apellido inválido. Solo se permiten letras, sin números ni caracteres especiales.");
         return false;
     }
 
@@ -60,10 +60,10 @@ registro.addEventListener("submit", (e)=>{
 
     // Validar contraseña: al menos 10 caracteres, incluir letras y al menos un carácter especial
     const contrasena = document.querySelector('input[name="contraseña"]').value;
-    const regexContrasena = /^(?=.*[a-zA-Z])(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{10,}$/;
+    const regexContrasena = /^(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?])(?=.*[A-Za-z]).{8,}$/;
     
     if (!regexContrasena.test(contrasena)) {
-        alert("Contraseña inválida. Debe tener al menos 10 caracteres, incluir letras y contener al menos un carácter especial.");
+        alert("Contraseña inválida. Debe tener al menos 8 caracteres, incluir letras y contener al menos un carácter especial.");
         return false;
     }
 
