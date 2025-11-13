@@ -1,0 +1,360 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 25px 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 35px;
+}
+
+header h1 {
+    color: #2d3748;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+    transform: translateY(-2px);
+}
+
+.btn-warning {
+    background: #ffc107;
+    color: #333;
+}
+
+.btn-warning:hover {
+    background: #ffb300;
+    transform: translateY(-2px);
+}
+
+.btn-danger {
+    background: #f44336;
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #d32f2f;
+    transform: translateY(-2px);
+}
+
+.btn-info {
+    background: #00bcd4;
+    color: white;
+}
+
+.btn-info:hover {
+    background: #00acc1;
+    transform: translateY(-2px);
+}
+
+/* Alertas */
+.alert {
+    padding: 18px 24px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.alert-success {
+    background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+    color: #155724;
+    border-left: 5px solid #28a745;
+}
+
+.alert-error {
+    background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+    color: #721c24;
+    border-left: 5px solid #dc3545;
+}
+
+/* Grid de proyectos */
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.proyecto-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s ease;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Imagen del proyecto */
+.proyecto-imagen {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.proyecto-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+.proyecto-card:hover .proyecto-imagen img {
+    transform: scale(1.05);
+}
+
+.proyecto-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    gap: 10px;
+    padding: 20px 20px 0 20px;
+}
+
+.proyecto-title-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.proyecto-header h2 {
+    color: #2d3748;
+    font-size: 22px;
+    font-weight: 700;
+    flex: 1;
+}
+
+.estado {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.estado-desarrollo {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    color: #e65100;
+}
+
+.estado-finalizado {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    color: #2e7d32;
+}
+
+.proyecto-body {
+    margin-bottom: 15px;
+    padding: 0 20px 20px 20px;
+}
+
+.descripcion {
+    color: #4a5568;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.autor, .colaboradores {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #718096;
+}
+
+.autor strong, .colaboradores strong {
+    color: #2d3748;
+}
+
+.fechas {
+    display: flex;
+    gap: 15px;
+    margin-top: 12px;
+}
+
+.fecha {
+    font-size: 14px;
+    color: #718096;
+}
+
+.fecha strong {
+    color: #2d3748;
+}
+
+.proyecto-footer {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    padding: 15px 20px 20px 20px;
+    background: #f7fafc;
+}
+
+.proyecto-footer .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+/* Sin proyectos */
+.no-proyectos {
+    background: white;
+    padding: 80px 40px;
+    border-radius: 20px;
+    text-align: center;
+    grid-column: 1 / -1;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.no-proyectos p {
+    font-size: 20px;
+    color: #718096;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+/* Formularios */
+.form-container {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2d3748;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-group small.form-hint {
+    display: block;
+    margin-top: 6px;
+    color: #718096;
+    font-size: 13px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.form-actions .btn {
+    padding: 12px 28px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .proyecto-footer {
+        flex-wrap: wrap;
+    }
+}
